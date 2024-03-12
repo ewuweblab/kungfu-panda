@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background-image{
+    background-image:url('static/real-background.jpg');
+    /*background-image: url('static/Img/calv-home.jpg'); */
+    padding-bottom: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+.back-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: -110px;
+    font-family: 'Sofia Sans', sans-serif;
+    
+}
+.back-box-2 h1{
+    margin-right: 30%;
+    margin-left: 30%;
+    color: white;
+    border: white solid 3px;
+    text-align: center;
+    width: 40%;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+
+.logo{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.info-box{
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.synop{
+    font-size: 30px;
+}
+.synop-box{
+    font-family: 'Sofia Sans', sans-serif;
+    text-align: center;
+}
+.synop-box div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sum{
+    font-size: 20px;
+}
+/*===================FOOTER====================*/
+.footer-logo{
+    width: 140px;
+}
+footer{
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+    float: left;
+   width: 100%;
+   margin-bottom: 16px;
+   font-family: 'Sofia Sans', sans-serif;
+}
+.footer-web{
+    display: inline-block;
+    margin-left: 10px;
+}
+footer{
+    
+
+}
+/* end of footer */  
+
+.fa-youtube, .fa-instagram{
+    font-size: 30px;
+    color: black;;
+}
+
+/*===================CAST======================*/
+.cast-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cast-item{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Sofia Sans', sans-serif;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 20px;
+    border-radius: 14px;
+}
+.cast-item img{
+    width: 160px;
+    border-radius: 14px;
+    height: 200px;
+}
+.cast-title{
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 30px;
+}
+hr{
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 30%;
+    height: 2px;
+    background-color: black;
+}
+.name{
+    font-style: italic;
+}
+.back-box-2 a{
+    text-decoration: none;
+}
+/*----------------KEYFRAMES------------------------*/
+.typingEffect1 {
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid white;
+    animation: types 4s steps(30, end), cursorblink 1s step-end infinite;
+  }
+  @keyframes types {
+     from { width: 0; }
+     to { width:300px; }
+  }
+   
+  @keyframes cursorblink{
+    from, to {border-color: transparent}
+    50%{ border-color:white;}
+  }
+  
+
+  /*==========================Responsive css======================= */
+  @media (max-width: 760px){
+    .synop-pc{
+        display: none;
+    }
+    .syn-hr-pc{
+        display: none;
+    }
+  }
+  @media (min-width: 760px){
+    .back-box-2 h1{
+        margin-right: 40%;
+        margin-left: 40%;
+        width: 20%;
+    }
+
+    .info-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .synop-box{
+        width: 360px;
+    }
+    .synop{
+        display: none;
+    }
+    .syn-hr{
+        display: none;
+    }
+    .synop-pc{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Sofia Sans', sans-serif;
+        font-size: 30px;
+
+    }
+    .syn-hr-pc{
+        display: block;
+    }
+}
+
+@media (min-width: 500px){
+    .cast-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;;
+        
+    }
+    .cast-item{
+        margin-right: 28px;
+        margin-left: 28px;
+    }
+}
+
+@media (max-width: 420px){
+  
+      .typingEffect1{
+          font-size: 26px;
+          width:260px; 
+      }
+      @keyframes types {
+          from { width: 0; }
+          to { width:266px; }
+       }
+  }
